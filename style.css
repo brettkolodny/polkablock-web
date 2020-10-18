@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+@keyframes orbit {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg);}
+}
+
+* {
+    font-family: "Lato";
+}
+
+body {
+    background-color: #F0F4F8;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-family: "Damion";
+    color: #8888FC;
+    font-size: 96px;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+#info {
+    width: 512px;
+    height: 124px;
+    margin: 0 auto;
+
+    padding: 10px;
+    background-color: #BCCCDC;
+    border-radius: 25px;
+
+    font-size: 24px;
+    color: #3525E6;
+
+    text-align: center;
+    line-height: 42px;
+
+    filter: drop-shadow(0 10px 20px rgb(0, 0, 0, 0.15));
+    filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.10));
+}
+
+#search-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+input {
+    border: none;
+    width: 256px;
+    height: 64px;
+    background-color: #F0F4F8;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 36px;
+    color: #627D98;
+    margin-left: 6px;
+    margin-right: 6px;
+
+    filter: drop-shadow(0 2px 4px rgb(0, 0, 0, 0.12));
+    filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.15));
+}
+
+#search-button {
+    cursor: pointer;
+    text-align: center;
+    width: 186px;
+    height: 64px;
+    border-radius: 100px;
+    background-color: #65D6AD;
+    color: #334E68;
+    font-size: 36px;
+    line-height: 64px;
+    margin: 0 auto;
+
+    margin-bottom: 16px;
+
+    filter: drop-shadow(0 2px 4px rgb(0, 0, 0, 0.12));
+    filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.15));
+}
+
+#block {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #BCCCDC;
+    width: auto;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+
+    justify-content: space-evenly;
+
+    font-size: 24px;
+    color: #3525E6;
+
+    filter: drop-shadow(0 10px 20px rgb(0, 0, 0, 0.15));
+    filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.10));
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #BCCCDC;
+
+    font-size: 24px;
+    color: #3525E6;
+}
+
+.info div {
+    font-size: 18px;
+    color: #486581;
+}
+
+#dots {
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backface-visibility: hidden;
+}
+
+.dot {
+    position: absolute;
+    background-color: #fefde2;
+    border-radius: 100%;
+    backface-visibility: hidden;
+}
